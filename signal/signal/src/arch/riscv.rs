@@ -1,5 +1,4 @@
 use axhal::arch::{TrapFrame, local_flush_icache_all};
-
 use axtype::align_down;
 use crate::{RTSigFrame, KSignal, SIGFRAME_SIZE};
 use crate::{setup_sigcontext, restore_sigcontext};
