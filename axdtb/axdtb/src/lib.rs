@@ -10,7 +10,9 @@ extern crate alloc;
 use alloc::{borrow::ToOwned, string::String, vec::Vec};
 
 const MAGIC_NUMBER     : u32 = 0xd00dfeed;
+
 const SUPPORTED_VERSION: u32 = 17;
+
 const OF_DT_BEGIN_NODE : u32 = 0x00000001;
 const OF_DT_END_NODE   : u32 = 0x00000002;
 const OF_DT_PROP       : u32 = 0x00000003;
