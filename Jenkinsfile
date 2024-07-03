@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
-
-	
     environment {
         // 主仓名
         mainRepoName = "lkmodel"
@@ -27,7 +25,6 @@ pipeline {
         // 动态获取当前构建的提交 SHA
         GA_COMMIT_SHA = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
     }
-
 
     stages {
         stage("多仓CI") {
